@@ -1,0 +1,4 @@
+@import "tailwindcss";
+@import "@repo/svelte-ui/globals.css";
+
+@source "../../../packages/svelte-ui/src";

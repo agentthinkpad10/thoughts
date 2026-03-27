@@ -1,0 +1,27 @@
+{
+  "name": "@repo/svelte-query",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tanstack/svelte-query": "^5.75.0",
+    "@trpc/client": "^11.0.0",
+    "@trpc/server": "^11.0.0",
+    "superjson": "^2.2.2"
+  },
+  "peerDependencies": {
+    "svelte": "^5.0.0"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "*",
+    "svelte": "^5.0.0",
+    "typescript": "5.9.2"
+  }
+}

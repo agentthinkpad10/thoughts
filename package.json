@@ -1,0 +1,36 @@
+{
+  "name": "thoughts",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types",
+    "test": "turbo run test",
+    "test:e2e": "turbo run test:e2e",
+    "clean": "rm -rf node_modules **/*/bun.lock **/*/node_modules",
+    "db:generate": "turbo run db:generate --filter=@repo/db",
+    "db:push": "turbo run db:push --filter=@repo/db",
+    "db:push:staging": "turbo run db:push:staging --filter=@repo/db",
+    "db:push:prod": "turbo run db:push:prod --filter=@repo/db",
+    "db:migrate": "turbo run db:migrate --filter=@repo/db",
+    "db:studio": "turbo run db:studio --filter=@repo/db",
+    "db:seed": "turbo run db:seed --filter=@repo/db",
+    "docker:up": "docker compose up -d && bun run db:push && bun run db:generate",
+    "docker:down": "docker compose down --volumes --remove-orphans"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "turbo": "^2.8.20",
+    "typescript": "5.9.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "bun@1.3.5",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

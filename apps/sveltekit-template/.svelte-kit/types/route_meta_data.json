@@ -1,0 +1,6 @@
+{
+	"/": [],
+	"/api/trpc/[...trpc]": [
+		"src/routes/api/trpc/[...trpc]/+server.ts"
+	]
+}
