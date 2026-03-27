@@ -1,6 +1,0 @@
-{
-  "buildCommand": "bun run build --filter=nextjs-template",
-  "devCommand": "bun run dev --filter=nextjs-template",
-  "installCommand": "bun install",
-  "framework": "nextjs"
-}
