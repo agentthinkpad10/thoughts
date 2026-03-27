@@ -1,0 +1,9 @@
+{
+  "monorepo": true,
+  "projects": [
+    {
+      "name": "nextjs-template",
+      "path": "apps/nextjs-template"
+    }
+  ]
+}
