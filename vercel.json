@@ -1,8 +1,6 @@
 {
-  "buildCommand": "cd apps/nextjs-template && npm run build",
-  "devCommand": "cd apps/nextjs-template && npm run dev",
+  "buildCommand": "bun run build --filter=nextjs-template",
+  "devCommand": "bun run dev --filter=nextjs-template",
   "installCommand": "bun install",
-  "outputDirectory": ".next",
-  "framework": "nextjs",
-  "rootDirectory": "apps/nextjs-template"
+  "framework": "nextjs"
 }
